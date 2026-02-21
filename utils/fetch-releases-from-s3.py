@@ -26,63 +26,63 @@ conn.sql(
 INSTALL spatial;
 LOAD spatial;
 
-CREATE OR REPLACE VIEW address AS (
+CREATE OR REPLACE VIEW address_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=addresses/type=address/*.parquet')
 );
 
-CREATE OR REPLACE VIEW bathymetry AS (
+CREATE OR REPLACE VIEW bathymetry_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=bathymetry/*.parquet')
 );
 
-CREATE OR REPLACE VIEW building AS (
+CREATE OR REPLACE VIEW building_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=buildings/type=building/*.parquet')
 );
 
-CREATE OR REPLACE VIEW building_part AS (
+CREATE OR REPLACE VIEW building_part_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=buildings/type=building_part/*.parquet')
 );
 
-CREATE OR REPLACE VIEW connector AS (
+CREATE OR REPLACE VIEW connector_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=transportation/type=connector/*.parquet')
 );
 
-CREATE OR REPLACE VIEW division AS (
+CREATE OR REPLACE VIEW division_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=divisions/type=division/*.parquet')
 );
 
-CREATE OR REPLACE VIEW division_area AS (
+CREATE OR REPLACE VIEW division_area_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=divisions/type=division_area/*.parquet')
 );
 
-CREATE OR REPLACE VIEW division_boundary AS (
+CREATE OR REPLACE VIEW division_boundary_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=divisions/type=division_boundary/*.parquet')
 );
 
-CREATE OR REPLACE VIEW infrastructure AS (
+CREATE OR REPLACE VIEW infrastructure_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=infrastructure/*.parquet')
 );
 
-CREATE OR REPLACE VIEW land AS (
+CREATE OR REPLACE VIEW land_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=land/*.parquet')
 );
 
-CREATE OR REPLACE VIEW land_cover AS (
+CREATE OR REPLACE VIEW land_cover_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=land_cover/*.parquet')
 );
 
-CREATE OR REPLACE VIEW land_use AS (
+CREATE OR REPLACE VIEW land_use_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=land_use/*.parquet')
 );
 
-CREATE OR REPLACE VIEW place AS (
+CREATE OR REPLACE VIEW place_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=places/type=place/*.parquet')
 );
 
-CREATE OR REPLACE VIEW segment AS (
+CREATE OR REPLACE VIEW segment_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=transportation/type=segment/*.parquet')
 );
 
-CREATE OR REPLACE VIEW water AS (
+CREATE OR REPLACE VIEW water_vw AS (
   SELECT * FROM read_parquet('s3://overturemaps-us-west-2/release/{output.get("latest")}/theme=base/type=water/*.parquet')
 );
 """
