@@ -11,3 +11,5 @@ releases.json
 
 overture-latest.session.sql
 places.geojson
+
+*.tmp
