@@ -1,0 +1,5 @@
+[dependency-groups]
+dev = [
+    "duckdb>=1.4.4",
+    "pip>=26.0.1",
+]

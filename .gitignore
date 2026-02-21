@@ -1,0 +1,13 @@
+.venv
+venv
+
+.vscode
+
+*.ddb
+*.wal
+
+registry-manifest.json
+releases.json
+
+overture-latest.session.sql
+places.geojson
