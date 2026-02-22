@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import duckdb, json
 from obstore.store import S3Store
 
