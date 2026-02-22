@@ -13,3 +13,7 @@ overture-latest.session.sql
 places.geojson
 
 *.tmp
+
+parquets/*.parquet
+
+parquets/*
