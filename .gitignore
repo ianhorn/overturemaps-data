@@ -17,3 +17,5 @@ places.geojson
 parquets/*.parquet
 
 parquets/*
+
+.DS_Store
