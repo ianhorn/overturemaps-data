@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-rm -rf latest.ddb*
+# rm -rf latest.ddb*
 ./utils/fetch-releases-from-s3.py

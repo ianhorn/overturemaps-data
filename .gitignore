@@ -14,8 +14,10 @@ places.geojson
 
 *.tmp
 
-parquets/*.parquet
+*.parquet
+*.gdb
+*.gpkg
 
-parquets/*
 
 .DS_Store
+*.gdb.zip
