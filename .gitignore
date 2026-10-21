@@ -21,3 +21,9 @@ places.geojson
 
 .DS_Store
 *.gdb.zip
+
+misc
+releases_*.json
+
+*.zip
+*.qmd
